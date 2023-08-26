@@ -1,0 +1,25 @@
+.field-container{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top:0;
+    width: 10%;
+    height: 10%;
+    display: contents;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(0 red, 0 green, 0 blue, 0.4 alpha);
+
+}
+
+.field{
+    border-radius: 5px;
+    padding:2rem;
+    background-color: rgb(247, 245, 224);
+    width: 25em;
+}
+.field .btn{
+   display: block;
+   margin: auto;
+
+}
