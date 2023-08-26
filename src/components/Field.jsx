@@ -1,7 +1,7 @@
 import React from 'react'
 import './data.css'
 
-function  Data() {
+export const Data =({closeData}) =>  {
   return (
     <div className='field-container'>
       <div className='field'>
@@ -31,5 +31,6 @@ function  Data() {
     </div>
   )
 }
+ 
+export default Data;
 
-export default  Data;

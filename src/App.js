@@ -2,17 +2,17 @@ import { useState } from "react";
 import "./App.css";
 import React from "react";
 import Table from "./components/Table";
-import Data from "./components/Data";
+import Data from "./components/Field";
 
 
 function App() {
-  const {fieldOpen, setFieldOpen}= useState(false);
+  const {DataOpen, setDataOpen}= useState(false);
   return(
     <div>
       <Table/>
-      <button className="btn" onClick={()=>setFieldOpen(true)}>
+      <button className="btn" onClick={()=>setDataOpen(true)}>
         Add User</button>
-    {fieldOpen && <Data closeField={()=>setFieldOpen(false)}/>}
+    {DataOpen && <Data closeData={()=>setDataOpen(false)}/>}
     </div>
 );
 }
