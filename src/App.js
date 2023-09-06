@@ -8,22 +8,22 @@ function App() {
   const [DataOpen, setDataOpen] = useState(false);
   const [rows, setRows] = useState([
     {
-      Name: "Name",
-      LastName: "This is the name",
-      UserInformation: "Male or Female",
-      email:"email address",
+      name: "Arnoe",
+      lastname: "Tbs",
+      userInformation: "Male",
+      email:"arnoetbs@hoo.com",
     },
     {
-      Name: "Name",
-      LastName: "This is the name",
-      UserInformation: "Male or Female",
-      email:"email address",
+      name: " Jj",
+      lastname: "Okocha",
+      userInformation: "Male ",
+      email:"jjokocha@yahoo.com",
     },
     {
-      Name: "Name",
-      LastName: "This is the name",
-      UserInformation: "Male or Female",
-      email:"email address",
+      name: "mik",
+      lastname: "aenda",
+      userInformation: " Female",
+      email:"mkaenda@gmail.com",
     },
   ]);
   const [rowToEdit, setRowToEdit] = useState(null);

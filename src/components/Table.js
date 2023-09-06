@@ -1,7 +1,7 @@
 import React from "react";
 import "./Table.css";
 
-export const Table = ({ rows, deleteRow, editRow }) => {
+export const Table = ({ rows}) => {
   return (
     <div className="table-wrapper">
       <table className="table">
@@ -9,7 +9,7 @@ export const Table = ({ rows, deleteRow, editRow }) => {
           <tr>
             <th>Name</th>
             <th>LastName</th>
-            <th className="expand">User Information</th>
+            <th>User Information</th>
             <th>email</th>
           </tr>
         </thead>
@@ -19,9 +19,9 @@ export const Table = ({ rows, deleteRow, editRow }) => {
               <tr key={idx}>
                 <td>{row.name}</td>
                 <td>{row.lastname}</td>
-                <td className="expand">{row.userinfomation}</td>
-                <td className="fit">
-                </td>
+                <td >{row.userInformation}</td>
+                <td>{row.email}</td>
+                
               </tr>
             );
           })}

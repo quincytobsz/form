@@ -5,17 +5,17 @@ import "./data.css";
 export const Data = ({ closeData, onSubmit, defaultValue }) => {
   const [formState, setFormState] = useState(
     defaultValue || {
-        Name: "Name",
-        LastName: "This is the name",
-        UserInformation: "Male or Female",
-        email:"email",
+     name: "name",
+    lastName: "lastname",
+    userInformation: " ",
+    email: "email",
       
     }
   );
   const [errors, setErrors] = useState("");
 
   const validateForm = () => {
-    if (formState.page && formState.description && formState.status) {
+    if (formState.name && formState.lastname && formState.userInformation && formState.email) {
       setErrors("");
       return true;
     } else {
@@ -64,15 +64,15 @@ export const Data = ({ closeData, onSubmit, defaultValue }) => {
           <div className="field-group">
             <label htmlFor="lastname">LastName</label>
             <textarea
-              name="LastName"
+              name="lastname"
               onChange={handleChange}
               value={formState.lastname}
             />
           </div>
           <div className="field-group">
-            <label htmlFor="UserInformation">User Information</label>
+            <label htmlFor="userInformation">User Information</label>
             <select
-              name="User Information"
+              name="userInformation"
               onChange={handleChange}
               value={formState.UserInformation}
             >
