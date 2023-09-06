@@ -5,10 +5,10 @@ import "./data.css";
 export const Data = ({ closeData, onSubmit, defaultValue }) => {
   const [formState, setFormState] = useState(
     defaultValue || {
-     name: "name",
-    lastName: "lastname",
+     name: "",
+    lastName: "",
     userInformation: " ",
-    email: "email",
+    email: "",
       
     }
   );
