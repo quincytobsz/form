@@ -1,55 +1,35 @@
 import React from "react";
 import "./Table.css";
 
-
-const Table
- = () => {
+export const Table = ({ rows, deleteRow, editRow }) => {
   return (
-    <div className='table-wrapper'>
-      <table className='table'>
+    <div className="table-wrapper">
+      <table className="table">
         <thead>
-            <tr>
-                <th>FirstName</th>
-                <th>LastName</th>
-                <th className="expand"> User Information</th>
-                <th>email</th>
-            </tr>
+          <tr>
+            <th>Name</th>
+            <th>LastName</th>
+            <th className="expand">User Information</th>
+            <th>email</th>
+          </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Arnold</td>
-                <td>Tobayiwa</td>
-                <td>male </td>
-                <td>Quincy@any.com</td>
-            </tr>
-            <tr>
-                <td>Arnold</td>
-                <td>Tobayiwa</td>
-                <td>male </td>
-                <td>Quincy@any.com</td>
-            </tr>
-            <tr>
-                <td>Arnold</td>
-                <td>Tobayiwa</td>
-                <td>male </td>
-                <td>Quincy@any.com</td>
-            </tr>
-            <tr>
-                <td>Arnold</td>
-                <td>Tobayiwa</td>
-                <td>male </td>
-                <td>Quincy@any.com</td>
-            </tr>
-
-
+          {rows.map((row, idx) => {
+             return (
+              <tr key={idx}>
+                <td>{row.name}</td>
+                <td>{row.lastname}</td>
+                <td className="expand">{row.userinfomation}</td>
+                <td className="fit">
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
-  )
-}
-
-export default Table
-
+  );
+};
 
 
 
